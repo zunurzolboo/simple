@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Unuruu Phonegap test</title>
+    </head>
+    <body>
+        <button id="unuruu">
+            Do it
+        </button>
+        <button id="clear">
+            clear
+        </button>
+        <div id="results"></div>
+        <script src="js/zepto.js"></script>        
+        <script src="js/unuruu.js"></script>        
+        <script>
+            $('#unuruu').click(function(){
+               UNURUU.Dolt($('#results')); 
+            });
+            $('#clear').click(function(){
+               $('#results').html(''); 
+            });
+        </script>
+    </body>
+</html>
